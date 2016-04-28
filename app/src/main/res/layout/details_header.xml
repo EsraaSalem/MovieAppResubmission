@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerMainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#3b46ff"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/abc_text_size_headline_material" />
+
+
+    <ImageView
+        android:id="@+id/movieImgId"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvVote_average" />
+
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/movieImgId"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:id="@+id/tvVote_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relaese_date"
+        android:layout_alignStart="@+id/relaese_date"
+        android:layout_below="@+id/relaese_date" />
+
+    <TextView
+        android:id="@+id/relaese_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvVote_average"
+        android:layout_alignStart="@+id/tvVote_average"
+        android:layout_below="@+id/tvVote_average" />
+
+    <TextView
+        android:id="@+id/tvVote_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/movieTitle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/movieImgId"
+        android:layout_toRightOf="@+id/movieImgId" />
+
+    <Button
+        android:id="@+id/btnAddTofavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to favourite"
+        android:layout_alignBottom="@+id/movieImgId"
+        android:layout_toRightOf="@+id/movieImgId"
+        android:layout_toEndOf="@+id/movieImgId" />
+
+
+</RelativeLayout>
